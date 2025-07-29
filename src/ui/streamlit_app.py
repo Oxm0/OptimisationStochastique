@@ -1,11 +1,11 @@
+from data.data_importer import import_data
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from src.data.data_importer import import_data
-from src.models.optimization_models import optimize_with_pso, monte_carlo_simulation
-from src.visualization.plotly_plots import plot_bar_chart, plot_scatter_plot, plot_heatmap, plot_production_load
-from src.utils.equations import show_equations
-from src.production.production_means import ProductionMeansManager
+from models.optimization_models import optimize_with_pso, monte_carlo_simulation
+from visualization.plotly_plots import plot_bar_chart, plot_scatter_plot, plot_heatmap, plot_production_load
+from utils.equations import show_equations
+from production.production_means import ProductionMeansManager
 
 def main():
     st.title("Application d'Optimisation Stochastique")
